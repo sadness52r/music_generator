@@ -1,5 +1,4 @@
 import Note
-from typing import List
 import pickle
 
 class Composition:

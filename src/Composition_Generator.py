@@ -23,7 +23,6 @@ notes_frequencies = {
 }
 
 def generate_random_note() -> Note:
-    #print()
     note_name = np.random.choice(list(notes_frequencies.keys()))
     note_freq = notes_frequencies[note_name]
     duration = np.random.uniform(1000, 8000)
