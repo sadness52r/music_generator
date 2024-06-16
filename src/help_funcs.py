@@ -3,6 +3,7 @@ from Composition_Generator import generate_random_composition
 from Composition import Composition
 from config import NOTES_NUMBER
 
+
 def create_composition(filename: str) -> Composition:
     print('Your composition is preparing...')
 

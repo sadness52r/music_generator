@@ -1,8 +1,8 @@
-import pytest
 from src.Note import Note
 from src.config import TEST_DURATION
 from src.Composition import Composition
 from src.Composition_Generator import notes_frequencies
+
 
 def test_eq_compositions():
     composition1 = Composition()

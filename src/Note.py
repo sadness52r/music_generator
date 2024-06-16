@@ -3,7 +3,6 @@ class Note:
         self.name = name
         self.duration = duration
         self.freq = freq
-    
 
     def __ne__(self, other: object) -> bool:
         if not isinstance(other, Note):

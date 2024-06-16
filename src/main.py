@@ -4,6 +4,7 @@ import Commands
 import help_funcs
 from config import FILENAME
 
+
 if __name__ == '__main__':
     print('Hey! Welcome to generator of random sounds!')
     while True:
@@ -31,6 +32,3 @@ if __name__ == '__main__':
                 print(f'Invalid format of file {filename}!')
         else:
             break
-        
-
-# тесты (при одинаковых нотах должна быть одинаковая композиция)

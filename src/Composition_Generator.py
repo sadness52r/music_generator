@@ -3,6 +3,7 @@ from .Note import Note
 from .Composition import Composition
 from .config import START_RANDOM_DURATION, END_RANDOM_DURATION
 
+
 notes_frequencies = {
     'C0': 16.35, 'C#0': 17.32, 'D0': 18.35, 'D#0': 19.45, 'E0': 20.60, 'F0': 21.83, 'F#0': 23.12,
     'G0': 24.50, 'G#0': 25.96, 'A0': 27.50, 'A#0': 29.14, 'B0': 30.87,
@@ -22,6 +23,7 @@ notes_frequencies = {
     'F#7': 2959.96, 'G7': 3135.96, 'G#7': 3322.44, 'A7': 3520.00, 'A#7': 3729.31, 'B7': 3951.07,
     'C8': 4186.01
 }
+
 
 def generate_random_note() -> Note:
     note_name = np.random.choice(list(notes_frequencies.keys()))
