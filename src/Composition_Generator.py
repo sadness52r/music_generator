@@ -1,6 +1,7 @@
 import numpy as np
-import Note
-import Composition
+from .Note import Note
+from .Composition import Composition
+from .config import START_RANDOM_DURATION, END_RANDOM_DURATION
 
 notes_frequencies = {
     'C0': 16.35, 'C#0': 17.32, 'D0': 18.35, 'D#0': 19.45, 'E0': 20.60, 'F0': 21.83, 'F#0': 23.12,
@@ -25,7 +26,7 @@ notes_frequencies = {
 def generate_random_note() -> Note:
     note_name = np.random.choice(list(notes_frequencies.keys()))
     note_freq = notes_frequencies[note_name]
-    duration = np.random.uniform(1000, 8000)
+    duration = np.random.uniform(START_RANDOM_DURATION, END_RANDOM_DURATION)
     return Note.Note(note_name, duration, note_freq)
 
 
